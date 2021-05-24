@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #182c61;
+  font-family: "Fredoka One";
+}
+
+.name {
+  padding: 10px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #f8efba;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20vmin;
+}
+
+.email {
+  padding: 10px 50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  color: #ffbe76;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 4vmin;
+}
+@keyframes hearbeat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.ball {
+  background-color: #fff200;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+
+  mix-blend-mode: difference;
+  animation: hearbeat 10s infinite;
+}
